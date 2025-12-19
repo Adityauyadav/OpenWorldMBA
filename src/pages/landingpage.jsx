@@ -127,11 +127,15 @@ function LandingPage() {
               <div className="mt-8 flex items-center justify-center space-x-6 border-t border-white/5 pt-6 lg:hidden">
                 <SocialLink href="https://www.linkedin.com/company/openworldmba/" icon={<LinkedInIcon />} label="LinkedIn" />
                 <SocialLink href="https://twitter.com/openworldmba" icon={<TwitterIcon />} label="Twitter" />
-                <SocialLink href="https://openworldmba.substack.com/" icon={<SubstackIcon />} label="Substack" />
               </div>
             </div>
           </div>
 
+        </div>
+
+        {/* Footer */}
+        <div className="absolute bottom-4 left-0 right-0 text-center text-xs text-gray-500">
+          <p>&copy; {new Date().getFullYear()} OpenWorldMBA. All rights reserved.</p>
         </div>
       </div>
     </div>
@@ -168,14 +172,6 @@ function TwitterIcon() {
   return (
     <svg className="h-5 w-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
       <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
-    </svg>
-  );
-}
-
-function SubstackIcon() {
-  return (
-    <svg className="h-5 w-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-      <path d="M22.539 8.242H1.46V5.406h21.08v2.836zM1.46 10.812V24L12 18.11 22.54 24V10.812H1.46zM22.54 0H1.46v2.836h21.08V0z" />
     </svg>
   );
 }
